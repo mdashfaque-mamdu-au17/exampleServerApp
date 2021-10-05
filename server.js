@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("server working this is homepage");
+  res.sendFile(`${__dirname}/index.html`);
 });
 
 console.log(`Herokuk port number is ${process.env.PORT}`);
